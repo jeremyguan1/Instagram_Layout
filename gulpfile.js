@@ -5,7 +5,7 @@ var cssnano = require("cssnano");
 var sass = require("gulp-sass");
 
 gulp.task("sass", function() {
-  var plugins = [autoprefixer({ browsers: ["last 1 version"] }), cssnano()];
+  var plugins = [autoprefixer({ browsers: ["last 1 version"] })];
   return gulp
     .src("index.scss")
     .pipe(sass())
